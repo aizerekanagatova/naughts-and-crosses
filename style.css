@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 3.1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #add8e6; /* Светло-синий цвет для всех клеток */
+    transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  }
+  
+  .cell:hover {
+   
+    font-size: 48px; /* Увеличение шрифта при наведении */
+  }
+  
+  .cell.X {
+    color: #9370d8; /* Желтый цвет для крестиков */
+  }
+  
+  .cell.X:hover {
+    color: #7851a9; /* Немного темнее желтый при наведении */
+  }
+  
+  .cell.O {
+    color: #32cd32; /* Зеленый цвет для ноликов */
+  }
+  
+  .cell.O:hover {
+    color: #2baf2b; /* Немного темнее зеленый при наведении */
+  }
+  
+  .message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .win {
+    background-color: #ffc1c1; /* Светло-розовый цвет для выигравших клеток */
+    
+  }
+  
